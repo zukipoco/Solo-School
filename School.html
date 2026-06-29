@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="[School Name] — Excellence in Education. Inspiring young minds to achieve their greatest potential.">
+  <meta name="keywords" content="school, education, academics, admissions, student portal">
+  <meta property="og:title"       content="[School Name] — Excellence in Education">
+  <meta property="og:description" content="Shaping tomorrow's leaders through knowledge, character, and purpose.">
+  <meta property="og:type"        content="website">
+  <title>[School Name] — Excellence in Education</title>
+  <link rel="stylesheet" href="School.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Dark mode toggle via checkbox hack -->
+  <style>
+    /* Theme toggle logic */
+    #theme-check { display: none; }
+    #theme-check:checked ~ * html,
+    #theme-check:checked + html { --ivory: #141B11; }
+    .theme-sun, .theme-moon { pointer-events: none; font-size: 16px; }
+    #theme-check ~ label .theme-sun  { display: inline; }
+    #theme-check ~ label .theme-moon { display: none; }
+    #theme-check:checked ~ label .theme-sun  { display: none; }
+    #theme-check:checked ~ label .theme-moon { display: inline; }
+
+    /* Sticky nav colour on scroll — CSS only trick with scroll-driven approach */
+    .nav-scrolled { box-shadow: 0 2px 16px rgba(0,0,0,.25); }
+
+    /* Active page highlighting */
+    .nav-links a[href*="home"].active,
+    a[data-page].active { color: var(--gold-light) !important; }
+
+    /* Smooth page switching via :target */
+    .page { display: none; }
+    body:not(:has(:target)) #page-home { display: block; }
+    #page-home:target,  #page-about:target,  #page-admissions:target,
+    #page-academics:target, #page-student:target, #page-teacher:target,
+    #page-admin:target, #page-gallery:target,  #page-news:target,
+    #page-contact:target { display: block; }
+    .page#page-home { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- ================================================
+     NAVIGATION
+     ================================================ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <!-- Brand -->
+    <a href="#page-home" class="nav-brand" aria-label="[School Name] home">
+      <div class="nav-logo" aria-hidden="true">SN</div>
+      <div class="nav-name">
+        [School Name]
+        <span>Est. 1985 &bull; Excellence in Education</span>
+      </div>
+    </a>
+
+    <!-- Mobile hamburger -->
+    <input type="checkbox" id="nav-open" class="nav-toggle-check" aria-hidden="true">
+    <label for="nav-open" class="nav-hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+
+    <!-- Links -->
+    <div class="nav-links" role="menubar">
+      <a href="#page-home"       role="menuitem">Home</a>
+      <a href="#page-about"      role="menuitem">About</a>
+      <a href="#page-admissions" role="menuitem">Admissions</a>
+      <a href="#page-academics"  role="menuitem">Academics</a>
+      <a href="#page-news"       role="menuitem">News &amp; Events</a>
+      <a href="#page-gallery"    role="menuitem">Gallery</a>
+      <a href="#page-contact"    role="menuitem">Contact</a>
+      <a href="#page-student"    role="menuitem" class="nav-cta">Student Portal</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ================================================
+     PAGE: HOME
+     ================================================ -->
+<div id="page-home" class="page">
+
+  <!-- Hero -->
+  <header class="hero" role="banner">
+    <div class="container">
+      <p class="hero-eyebrow" aria-hidden="true">Welcome to [School Name]</p>
+      <h1>Shaping Minds,<br><em>Building Futures</em></h1>
+      <p class="hero-lead">
+        A centre of academic excellence where curiosity is celebrated, character is formed,
+        and every student discovers their fullest potential.
+      </p>
+      <div class="hero-actions">
+        <a href="#page-admissions" class="btn-primary">Apply for Admission &#8594;</a>
+        <a href="#page-about"      class="btn-outline">Discover Our Story</a>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="hero-stats" role="list" aria-label="School statistics">
+        <div class="stat-item" role="listitem">
+          <strong>2,400+</strong><span>Enrolled Students</span>
+        </div>
+        <div class="stat-item" role="listitem">
+          <strong>120</strong><span>Qualified Teachers</span>
+        </div>
+        <div class="stat-item" role="listitem">
+          <strong>98%</strong><span>Pass Rate</span>
+        </div>
+        <div class="stat-item" role="listitem">
+          <strong>38</strong><span>Years of Excellence</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quick Links -->
+  <section aria-labelledby="ql-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Navigate</p>
+        <h2 class="section-heading" id="ql-heading">Quick Access</h2>
+        <p class="section-sub">Everything you need, right at your fingertips.</p>
+      </div>
+      <nav class="quick-links" aria-label="Quick navigation links">
+        <a href="#page-admissions" class="quick-link">
+          <div class="ql-icon" aria-hidden="true">📋</div>
+          <span class="ql-label">Admissions</span>
+        </a>
+        <a href="#page-academics" class="quick-link">
+          <div class="ql-icon" aria-hidden="true">📚</div>
+          <span class="ql-label">Academics</span>
+        </a>
+        <a href="#page-student" class="quick-link">
+          <div class="ql-icon" aria-hidden="true">🎓</div>
+          <span class="ql-label">Student Portal</span>
+        </a>
+        <a href="#page-teacher" class="quick-link">
+          <div class="ql-icon" aria-hidden="true">🏫</div>
+          <span class="ql-label">Teacher Portal</span>
+        </a>
+        <a href="#page-gallery" class="quick-link">
+          <div class="ql-icon" aria-hidden="true">🖼️</div>
+          <span class="ql-label">Gallery</span>
+        </a>
+        <a href="#page-contact" class="quick-link">
+          <div class="ql-icon" aria-hidden="true">📞</div>
+          <span class="ql-label">Contact Us</span>
+        </a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="bg-green-dark" aria-labelledby="vm-heading">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <p class="section-label">Our Purpose</p>
+          <h2 class="section-heading" id="vm-heading">Vision &amp; Mission</h2>
+          <p class="section-sub">We believe every child carries unique genius. Our role is to ignite it.</p>
+        </div>
+        <div class="card-grid-2">
+          <div class="card">
+            <div class="card-icon">🔭</div>
+            <h3>Our Vision</h3>
+            <p>To be Africa's most transformative school — producing graduates who lead with integrity, innovate with courage, and serve their communities with compassion.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon gold-bg">🎯</div>
+            <h3>Our Mission</h3>
+            <p>Delivering world-class education through dedicated teachers, robust curriculum, and an environment that nurtures academic, moral, and social development.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🌱</div>
+            <h3>Core Values</h3>
+            <p>Excellence · Integrity · Innovation · Respect · Community — the five pillars that govern everything we do.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon gold-bg">🏆</div>
+            <h3>Our Pledge</h3>
+            <p>Every student who walks through our gates will leave equipped with the knowledge, skills, and character to thrive in a rapidly changing world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Announcements -->
+  <section aria-labelledby="news-home-heading">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <p class="section-label">Stay Informed</p>
+          <h2 class="section-heading" id="news-home-heading">Latest News &amp; Announcements</h2>
+          <p class="section-sub">Important updates, achievements, and upcoming events from our school community.</p>
+          <a href="#page-news" class="btn-green" style="margin-top:28px; display:inline-flex;">
+            View All News &#8594;
+          </a>
+        </div>
+        <div>
+          <ul class="news-list" aria-label="Recent news items">
+            <li class="news-item">
+              <div class="news-date"><span class="day">14</span><span class="mon">Jun</span></div>
+              <div class="news-body">
+                <h4>2025 WAEC Results — 97% Distinction Rate</h4>
+                <p>Our students achieved outstanding results in the 2025 WAEC examinations, with 97% scoring distinctions across core subjects.</p>
+              </div>
+            </li>
+            <li class="news-item">
+              <div class="news-date"><span class="day">08</span><span class="mon">Jun</span></div>
+              <div class="news-body">
+                <h4>Term 3 Admissions Now Open</h4>
+                <p>Applications for the 2025/26 academic year are now being accepted. Early applications are encouraged.</p>
+              </div>
+            </li>
+            <li class="news-item">
+              <div class="news-date"><span class="day">01</span><span class="mon">Jun</span></div>
+              <div class="news-body">
+                <h4>Inter-School Science Fair — 1st Place</h4>
+                <p>Our Science Club won first place at the Regional Science Fair. Congratulations to all participating students!</p>
+              </div>
+            </li>
+            <li class="news-item">
+              <div class="news-date"><span class="day">24</span><span class="mon">May</span></div>
+              <div class="news-body">
+                <h4>Parents Open Day — Saturday, 5th July</h4>
+                <p>We warmly invite all parents and guardians to our Open Day. Meet teachers, tour facilities, and review student progress.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-ivory-dark" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="section-header" style="text-align:center; max-width:600px; margin: 0 auto 56px;">
+        <p class="section-label" style="justify-content:center;">Why [School Name]</p>
+        <h2 class="section-heading" id="why-heading">What Sets Us Apart</h2>
+        <p class="section-sub" style="margin:0 auto;">More than a school — a community built on purpose, driven by excellence.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🔬</div>
+          <h3>Modern Laboratories</h3>
+          <p>State-of-the-art science, computer, and language labs equipped with the latest technology to fuel hands-on learning.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon gold-bg">👩‍🏫</div>
+          <h3>Expert Faculty</h3>
+          <p>Over 120 highly qualified and experienced teachers dedicated to bringing out the best in every learner.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚽</div>
+          <h3>Rich Co-Curricular</h3>
+          <p>From debate clubs to sports championships — over 30 extra-curricular activities to develop the whole child.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon gold-bg">🌐</div>
+          <h3>Digital Learning</h3>
+          <p>Seamless digital portals for students and teachers. Access lessons, grades, timetables, and assignments online.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏅</div>
+          <h3>Award-Winning</h3>
+          <p>National recognition for academic excellence, sports, and arts — consistently ranked among the top schools in the region.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon gold-bg">🤝</div>
+          <h3>Inclusive Community</h3>
+          <p>A warm, diverse, and safe environment where every student is valued, respected, and given an equal opportunity to shine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-home -->
+
+
+<!-- ================================================
+     PAGE: ABOUT US
+     ================================================ -->
+<div id="page-about" class="page">
+  <header class="hero" role="banner">
+    <div class="container">
+      <p class="hero-eyebrow">About Us</p>
+      <h1>Our <em>Story &amp; Legacy</em></h1>
+      <p class="hero-lead">Four decades of shaping minds, building character, and inspiring generations of change-makers.</p>
+    </div>
+  </header>
+
+  <!-- History -->
+  <section aria-labelledby="history-heading">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <p class="section-label">Since 1985</p>
+          <h2 class="section-heading" id="history-heading">Our History</h2>
+          <p style="color:var(--text-muted); margin-bottom:16px; line-height:1.8;">
+            Founded in 1985 by a group of visionary educators determined to create a school where every child, regardless of background, could access quality education, [School Name] began with just 86 students and 12 teachers in three classrooms.
+          </p>
+          <p style="color:var(--text-muted); margin-bottom:16px; line-height:1.8;">
+            Today, we stand as one of the region's most respected educational institutions — home to over 2,400 students, 120 teachers, and an alumni network of more than 15,000 graduates who serve in every sector of society.
+          </p>
+          <p style="color:var(--text-muted); line-height:1.8;">
+            Our story is one of quiet determination, persistent improvement, and an unwavering belief that education is the greatest equalizer.
+          </p>
+        </div>
+        <div style="background:var(--green-light); border-radius:var(--radius-lg); padding:40px; display:flex; flex-direction:column; gap:24px;">
+          <div style="display:flex; gap:20px; align-items:flex-start; padding-bottom:24px; border-bottom:1px solid rgba(46,107,71,.25);">
+            <div style="font-family:var(--font-display); font-size:28px; font-weight:700; color:var(--green-dark); min-width:60px;">1985</div>
+            <div style="font-size:14px; color:var(--text-muted);">School founded by Dr. Emmanuel Asante with 86 students and 12 staff members.</div>
+          </div>
+          <div style="display:flex; gap:20px; align-items:flex-start; padding-bottom:24px; border-bottom:1px solid rgba(46,107,71,.25);">
+            <div style="font-family:var(--font-display); font-size:28px; font-weight:700; color:var(--green-dark); min-width:60px;">1998</div>
+            <div style="font-size:14px; color:var(--text-muted);">Expansion — new science block, computer lab, and sports complex opened.</div>
+          </div>
+          <div style="display:flex; gap:20px; align-items:flex-start; padding-bottom:24px; border-bottom:1px solid rgba(46,107,71,.25);">
+            <div style="font-family:var(--font-display); font-size:28px; font-weight:700; color:var(--green-dark); min-width:60px;">2010</div>
+            <div style="font-size:14px; color:var(--text-muted);">Accreditation by the National Education Board. Enrollment surpasses 1,000.</div>
+          </div>
+          <div style="display:flex; gap:20px; align-items:flex-start;">
+            <div style="font-family:var(--font-display); font-size:28px; font-weight:700; color:var(--green-dark); min-width:60px;">2024</div>
+            <div style="font-size:14px; color:var(--text-muted);">Launch of digital portals, new library wing, and international exchange programme.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Staff -->
+  <section class="bg-ivory-dark" aria-labelledby="staff-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Our People</p>
+        <h2 class="section-heading" id="staff-heading">School Management &amp; Staff</h2>
+        <p class="section-sub">Meet the passionate educators and leaders who make [School Name] exceptional.</p>
+      </div>
+      <div class="staff-grid">
+        <div class="staff-card">
+          <div class="staff-avatar">
+            <div class="staff-initials">EA</div>
+          </div>
+          <div class="staff-info">
+            <h4>Dr. Emmanuel Asante</h4>
+            <div class="role">Headmaster / Principal</div>
+            <div class="dept">Administration</div>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-avatar" style="background:rgba(200,155,42,.15);">
+            <div class="staff-initials" style="background:var(--gold); color:var(--green-dark);">AM</div>
+          </div>
+          <div class="staff-info">
+            <h4>Mrs. Abena Mensah</h4>
+            <div class="role">Deputy Headmistress</div>
+            <div class="dept">Academic Affairs</div>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-avatar">
+            <div class="staff-initials">KO</div>
+          </div>
+          <div class="staff-info">
+            <h4>Mr. Kwame Osei</h4>
+            <div class="role">Head of Sciences</div>
+            <div class="dept">Sciences Dept.</div>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-avatar" style="background:rgba(200,155,42,.15);">
+            <div class="staff-initials" style="background:var(--gold); color:var(--green-dark);">FA</div>
+          </div>
+          <div class="staff-info">
+            <h4>Ms. Fatima Acheampong</h4>
+            <div class="role">Head of Humanities</div>
+            <div class="dept">Humanities Dept.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="bg-green-dark" aria-labelledby="ach-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Recognition</p>
+        <h2 class="section-heading" id="ach-heading">Our Achievements</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🥇</div>
+          <h3>Best School — National Education Awards 2024</h3>
+          <p>Recognised as the best overall secondary school for academic excellence and student welfare.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon gold-bg">🔬</div>
+          <h3>Regional Science Fair Champions 2023 &amp; 2024</h3>
+          <p>Back-to-back victories at the Regional Science Innovation Fair across three categories.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📖</div>
+          <h3>98% WAEC Pass Rate — 12 Consecutive Years</h3>
+          <p>Sustained academic performance placing us consistently in the top 5% nationally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-about -->
+
+
+<!-- ================================================
+     PAGE: ADMISSIONS
+     ================================================ -->
+<div id="page-admissions" class="page">
+  <header class="hero" role="banner">
+    <div class="container">
+      <p class="hero-eyebrow">Admissions 2025/26</p>
+      <h1>Begin Your <em>Journey Here</em></h1>
+      <p class="hero-lead">We welcome students who are eager to learn, grow, and contribute to our vibrant school community.</p>
+      <div class="hero-actions">
+        <a href="#admission-form" class="btn-primary">Apply Now &#8594;</a>
+        <a href="#fee-structure"  class="btn-outline">View Fee Structure</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Admission Process -->
+  <section aria-labelledby="process-heading">
+    <div class="container">
+      <div class="section-header" style="text-align:center; max-width:600px; margin:0 auto 56px;">
+        <p class="section-label" style="justify-content:center;">How to Apply</p>
+        <h2 class="section-heading" id="process-heading">Admission Process</h2>
+      </div>
+      <div class="steps" role="list">
+        <div class="step" role="listitem">
+          <div class="step-num">1</div>
+          <h4>Complete Application</h4>
+          <p>Fill in the online admission form with accurate personal and academic details.</p>
+        </div>
+        <div class="step" role="listitem">
+          <div class="step-num">2</div>
+          <h4>Submit Documents</h4>
+          <p>Upload certified copies of previous results, birth certificate, and passport photos.</p>
+        </div>
+        <div class="step" role="listitem">
+          <div class="step-num">3</div>
+          <h4>Entrance Assessment</h4>
+          <p>Shortlisted applicants sit an entrance examination in English and Mathematics.</p>
+        </div>
+        <div class="step" role="listitem">
+          <div class="step-num">4</div>
+          <h4>Admission Offer</h4>
+          <p>Successful candidates receive a formal offer letter and complete enrolment online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requirements -->
+  <section class="bg-ivory-dark" aria-labelledby="req-heading">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <p class="section-label">What You Need</p>
+          <h2 class="section-heading" id="req-heading">Admission Requirements</h2>
+          <ul style="display:flex; flex-direction:column; gap:14px; margin-top:24px;">
+            <li style="display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--text-muted);">
+              <span style="color:var(--green-muted); font-weight:700; margin-top:1px;">✓</span>
+              Completed and signed application form
+            </li>
+            <li style="display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--text-muted);">
+              <span style="color:var(--green-muted); font-weight:700; margin-top:1px;">✓</span>
+              Certified copies of most recent school reports (last 2 years)
+            </li>
+            <li style="display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--text-muted);">
+              <span style="color:var(--green-muted); font-weight:700; margin-top:1px;">✓</span>
+              Certified copy of birth certificate or passport
+            </li>
+            <li style="display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--text-muted);">
+              <span style="color:var(--green-muted); font-weight:700; margin-top:1px;">✓</span>
+              Two recent passport-sized photographs
+            </li>
+            <li style="display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--text-muted);">
+              <span style="color:var(--green-muted); font-weight:700; margin-top:1px;">✓</span>
+              Immunisation / health records
+            </li>
+            <li style="display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--text-muted);">
+              <span style="color:var(--green-muted); font-weight:700; margin-top:1px;">✓</span>
+              Non-refundable application fee of GHS 50
+            </li>
+            <li style="display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--text-muted);">
+              <span style="color:var(--green-muted); font-weight:700; margin-top:1px;">✓</span>
+              Two character references (school head and religious leader)
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="section-label" style="margin-top:0;">Age Requirements</p>
+          <div style="display:flex; flex-direction:column; gap:16px; margin-top:16px;">
+            <div class="card">
+              <h3 style="margin-bottom:6px;">Primary School (JHS 1)</h3>
+              <p>Age 12–14 years. Must have completed Basic 6 with satisfactory results.</p>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:6px;">Senior High School (SHS 1)</h3>
+              <p>Age 15–17 years. Must hold BECE certificate with aggregate 6–24 (depending on programme).</p>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:6px;">Transfer Students</h3>
+              <p>All transfers are subject to available space and equivalency assessment. Contact admissions office.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fee Structure -->
+  <section id="fee-structure" aria-labelledby="fee-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Fees</p>
+        <h2 class="section-heading" id="fee-heading">Fee Structure 2025/26</h2>
+        <p class="section-sub">All fees are payable per term. Bursaries and payment plans are available.</p>
+      </div>
+      <div style="overflow-x:auto; border-radius:var(--radius-md); border:1px solid var(--ivory-dark);">
+        <table class="fee-table" aria-label="School fee structure">
+          <thead>
+            <tr>
+              <th>Level</th>
+              <th>Tuition (per term)</th>
+              <th>Boarding (per term)</th>
+              <th>Feeding (per term)</th>
+              <th>Total Approx.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>JHS 1</strong></td>
+              <td>GHS 1,200</td>
+              <td>GHS 850</td>
+              <td>GHS 600</td>
+              <td>GHS 2,650</td>
+            </tr>
+            <tr>
+              <td><strong>JHS 2</strong></td>
+              <td>GHS 1,200</td>
+              <td>GHS 850</td>
+              <td>GHS 600</td>
+              <td>GHS 2,650</td>
+            </tr>
+            <tr>
+              <td><strong>JHS 3</strong></td>
+              <td>GHS 1,350</td>
+              <td>GHS 850</td>
+              <td>GHS 600</td>
+              <td>GHS 2,800</td>
+            </tr>
+            <tr>
+              <td><strong>SHS 1</strong></td>
+              <td>GHS 1,600</td>
+              <td>GHS 950</td>
+              <td>GHS 650</td>
+              <td>GHS 3,200</td>
+            </tr>
+            <tr>
+              <td><strong>SHS 2</strong></td>
+              <td>GHS 1,600</td>
+              <td>GHS 950</td>
+              <td>GHS 650</td>
+              <td>GHS 3,200</td>
+            </tr>
+            <tr>
+              <td><strong>SHS 3</strong></td>
+              <td>GHS 1,750</td>
+              <td>GHS 950</td>
+              <td>GHS 650</td>
+              <td>GHS 3,350</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:16px; font-size:13px; color:var(--text-muted);">
+        * Day students pay tuition only. Boarding fees cover accommodation. Additional levies may apply for excursions and exam registration. Bursaries available — contact the bursar's office.
+      </p>
+    </div>
+  </section>
+
+  <!-- Online Admission Form -->
+  <section id="admission-form" class="bg-ivory-dark" aria-labelledby="form-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Apply Online</p>
+        <h2 class="section-heading" id="form-heading">Online Admission Form</h2>
+        <p class="section-sub">Complete all fields accurately. Your application will be reviewed within 5 working days.</p>
+      </div>
+      <div style="background:var(--white); border-radius:var(--radius-lg); border:1px solid var(--ivory-dark); padding:40px; max-width:860px;">
+        <form method="POST" action="#" aria-label="Student admission form">
+          <h3 style="font-family:var(--font-label); font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted); margin-bottom:20px; padding-bottom:12px; border-bottom:1px solid var(--ivory-dark);">Personal Information</h3>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="adm-fname">First Name *</label>
+              <input type="text" id="adm-fname" name="first_name" required placeholder="e.g. Kwame" autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="adm-lname">Last Name *</label>
+              <input type="text" id="adm-lname" name="last_name" required placeholder="e.g. Mensah" autocomplete="family-name">
+            </div>
+            <div class="form-group">
+              <label for="adm-dob">Date of Birth *</label>
+              <input type="date" id="adm-dob" name="dob" required>
+            </div>
+            <div class="form-group">
+              <label for="adm-gender">Gender *</label>
+              <select id="adm-gender" name="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="adm-address">Home Address *</label>
+              <input type="text" id="adm-address" name="address" required placeholder="Street, City, Region" autocomplete="street-address">
+            </div>
+          </div>
+
+          <h3 style="font-family:var(--font-label); font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted); margin:32px 0 20px; padding-bottom:12px; border-bottom:1px solid var(--ivory-dark);">Academic Information</h3>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="adm-level">Applying For *</label>
+              <select id="adm-level" name="level" required>
+                <option value="" disabled selected>Select level</option>
+                <option value="jhs1">JHS 1</option>
+                <option value="shs1">SHS 1</option>
+                <option value="transfer">Transfer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="adm-prev-school">Previous School *</label>
+              <input type="text" id="adm-prev-school" name="prev_school" required placeholder="Previous school name">
+            </div>
+            <div class="form-group">
+              <label for="adm-programme">Preferred Programme</label>
+              <select id="adm-programme" name="programme">
+                <option value="" disabled selected>Select programme</option>
+                <option value="science">General Science</option>
+                <option value="arts">General Arts</option>
+                <option value="business">Business</option>
+                <option value="visual-arts">Visual Arts</option>
+                <option value="home-eco">Home Economics</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="adm-aggregate">BECE Aggregate (SHS applicants)</label>
+              <input type="number" id="adm-aggregate" name="aggregate" min="6" max="54" placeholder="e.g. 12">
+            </div>
+          </div>
+
+          <h3 style="font-family:var(--font-label); font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--text-muted); margin:32px 0 20px; padding-bottom:12px; border-bottom:1px solid var(--ivory-dark);">Parent / Guardian Information</h3>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="adm-parent-name">Parent/Guardian Name *</label>
+              <input type="text" id="adm-parent-name" name="parent_name" required placeholder="Full name" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="adm-parent-phone">Phone Number *</label>
+              <input type="tel" id="adm-parent-phone" name="parent_phone" required placeholder="+233 20 000 0000" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="adm-parent-email">Email Address</label>
+              <input type="email" id="adm-parent-email" name="parent_email" placeholder="parent@email.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="adm-relationship">Relationship to Student *</label>
+              <select id="adm-relationship" name="relationship" required>
+                <option value="" disabled selected>Select relationship</option>
+                <option value="father">Father</option>
+                <option value="mother">Mother</option>
+                <option value="guardian">Guardian</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="adm-notes">Additional Information</label>
+              <textarea id="adm-notes" name="notes" placeholder="Special needs, health conditions, or anything the school should know..."></textarea>
+            </div>
+          </div>
+
+          <div style="margin-top:32px; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+            <button type="submit" class="btn-primary">Submit Application &#8594;</button>
+            <button type="reset" class="btn-outline" style="border-color:var(--ivory-dark); color:var(--text-muted);">Clear Form</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-admissions -->
+
+
+<!-- ================================================
+     PAGE: ACADEMICS
+     ================================================ -->
+<div id="page-academics" class="page">
+  <header class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Academics</p>
+      <h1>A Curriculum Built for <em>Tomorrow</em></h1>
+      <p class="hero-lead">Rigorous, broad, and relevant — our academic programmes prepare students for university, career, and life.</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="prog-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Programmes</p>
+        <h2 class="section-heading" id="prog-heading">Courses &amp; Departments</h2>
+        <p class="section-sub">Choose your path from our six established academic tracks.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">🔬</div>
+          <h3>General Science</h3>
+          <p>Physics, Chemistry, Biology, Elective Maths — preparing future doctors, engineers, and scientists.</p>
+          <div class="badge badge-green" style="margin-top:14px;">Core &amp; Elective Subjects</div>
+        </div>
+        <div class="card">
+          <div class="card-icon gold-bg">📐</div>
+          <h3>General Arts</h3>
+          <p>Literature, History, Geography, Government — for future lawyers, journalists, and public servants.</p>
+          <div class="badge badge-green" style="margin-top:14px;">Core &amp; Elective Subjects</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>Business</h3>
+          <p>Accounting, Economics, Business Management — grounding tomorrow's entrepreneurs and financiers.</p>
+          <div class="badge badge-green" style="margin-top:14px;">Core &amp; Elective Subjects</div>
+        </div>
+        <div class="card">
+          <div class="card-icon gold-bg">🎨</div>
+          <h3>Visual Arts</h3>
+          <p>Graphic Design, Basketry, Ceramics, Leatherwork — nurturing creativity and craft.</p>
+          <div class="badge badge-green" style="margin-top:14px;">Core &amp; Elective Subjects</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Home Economics</h3>
+          <p>Food &amp; Nutrition, Textiles, Management in Living — practical skills for everyday excellence.</p>
+          <div class="badge badge-green" style="margin-top:14px;">Core &amp; Elective Subjects</div>
+        </div>
+        <div class="card">
+          <div class="card-icon gold-bg">💻</div>
+          <h3>ICT &amp; Computing</h3>
+          <p>Computer science, programming basics, digital literacy — cross-cutting technology education for all students.</p>
+          <div class="badge" style="margin-top:14px;">All Programmes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Calendar -->
+  <section class="bg-ivory-dark" aria-labelledby="cal-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Academic Year 2025/26</p>
+        <h2 class="section-heading" id="cal-heading">Academic Calendar</h2>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="badge" style="margin-bottom:16px;">Term 1</div>
+          <h3>First Term</h3>
+          <ul style="display:flex; flex-direction:column; gap:10px; margin-top:12px;">
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Term opens</span><strong>8 Sep 2025</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Mid-term break</span><strong>13–17 Oct</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">End of term exams</span><strong>24–28 Nov</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Term closes</span><strong>5 Dec 2025</strong></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="badge" style="margin-bottom:16px;">Term 2</div>
+          <h3>Second Term</h3>
+          <ul style="display:flex; flex-direction:column; gap:10px; margin-top:12px;">
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Term opens</span><strong>12 Jan 2026</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Mid-term break</span><strong>16–20 Feb</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">End of term exams</span><strong>23–27 Mar</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Term closes</span><strong>3 Apr 2026</strong></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="badge" style="margin-bottom:16px;">Term 3</div>
+          <h3>Third Term</h3>
+          <ul style="display:flex; flex-direction:column; gap:10px; margin-top:12px;">
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Term opens</span><strong>4 May 2026</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Mid-term break</span><strong>1–5 Jun</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Final exams (WAEC)</span><strong>23 Jun onwards</strong></li>
+            <li style="display:flex; justify-content:space-between; font-size:14px;"><span style="color:var(--text-muted);">Term closes</span><strong>31 Jul 2026</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-academics -->
+
+
+<!-- ================================================
+     PAGE: STUDENT PORTAL
+     ================================================ -->
+<div id="page-student" class="page">
+  <section style="padding-top:60px; padding-bottom:60px;" aria-labelledby="student-portal-heading">
+    <div class="container">
+      <h2 class="sr-only" id="student-portal-heading">Student Portal</h2>
+
+      <!-- If not "logged in" — show login card (CSS only: use checkbox to simulate) -->
+      <input type="checkbox" id="student-logged-in" style="display:none;" aria-hidden="true">
+
+      <!-- Login card — visible by default -->
+      <div id="student-login-view">
+        <div class="portal-wrap">
+          <div class="portal-card">
+            <div class="portal-header">
+              <div class="portal-icon" aria-hidden="true">🎓</div>
+              <h2>Student Portal</h2>
+              <p>Sign in to access your dashboard, grades, timetable, and assignments.</p>
+            </div>
+
+            <!-- Tab switcher via radio -->
+            <div class="portal-tabs" role="tablist">
+              <label class="portal-tab">
+                <input type="radio" name="student-tab" checked aria-label="Sign in tab">
+                <span role="tab">Sign In</span>
+              </label>
+              <label class="portal-tab">
+                <input type="radio" name="student-tab" aria-label="Register tab">
+                <span role="tab">Register</span>
+              </label>
+            </div>
+
+            <form method="POST" action="#" aria-label="Student login form">
+              <div class="form-group" style="margin-bottom:16px;">
+                <label for="s-id">Student ID</label>
+                <input type="text" id="s-id" name="student_id" required placeholder="e.g. SN2025-0042" autocomplete="username">
+              </div>
+              <div class="form-group" style="margin-bottom:24px;">
+                <label for="s-pass">Password</label>
+                <input type="password" id="s-pass" name="password" required placeholder="••••••••" autocomplete="current-password">
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+                <label style="display:flex; align-items:center; gap:8px; font-size:14px; color:var(--text-muted); cursor:pointer;">
+                  <input type="checkbox" name="remember"> Remember me
+                </label>
+                <a href="#" style="font-size:14px; color:var(--green-muted); font-weight:500;">Forgot password?</a>
+              </div>
+              <!-- Use label trick to "log in" -->
+              <label for="student-logged-in" class="btn-primary" style="display:flex; justify-content:center; cursor:pointer; width:100%;">
+                Sign In to Dashboard &#8594;
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard — visible when checkbox is checked -->
+      <div id="student-dashboard-view" style="display:none;">
+        <div class="dashboard-layout">
+          <aside class="sidebar" aria-label="Student navigation">
+            <div class="sidebar-profile">
+              <div class="sidebar-avatar" aria-hidden="true">KM</div>
+              <div class="sidebar-name">Kofi Mensah</div>
+              <div class="sidebar-role">SHS 2 — General Science</div>
+              <div class="sidebar-role" style="color:rgba(255,255,255,.45); font-size:11px; margin-top:4px;">ID: SN2025-0042</div>
+            </div>
+            <nav class="sidebar-nav" aria-label="Dashboard sections">
+              <a href="#" class="active"><span class="nav-dot"></span> Overview</a>
+              <a href="#">📊 My Results</a>
+              <a href="#">📅 Timetable</a>
+              <a href="#">📝 Attendance</a>
+              <a href="#">📚 Assignments</a>
+              <a href="#">👤 My Profile</a>
+              <a href="#" style="margin-top:20px; color:rgba(255,100,100,.7);">🚪 Sign Out</a>
+            </nav>
+          </aside>
+
+          <div class="dashboard-content">
+            <!-- Metrics -->
+            <div class="dash-card">
+              <h3>Overview</h3>
+              <div class="metrics">
+                <div class="metric"><strong>78%</strong><span>Average Score</span></div>
+                <div class="metric"><strong>92%</strong><span>Attendance</span></div>
+                <div class="metric"><strong>3/4</strong><span>Assignments Done</span></div>
+                <div class="metric"><strong>B+</strong><span>Current Grade</span></div>
+              </div>
+            </div>
+
+            <!-- Timetable -->
+            <div class="dash-card">
+              <h3>This Week's Timetable <span class="badge badge-green">Week 8</span></h3>
+              <div style="overflow-x:auto;">
+                <table class="timetable" aria-label="Weekly timetable">
+                  <thead>
+                    <tr>
+                      <th>Period</th>
+                      <th>Monday</th>
+                      <th>Tuesday</th>
+                      <th>Wednesday</th>
+                      <th>Thursday</th>
+                      <th>Friday</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="period-cell">7:30 – 8:30</td>
+                      <td><span class="subject-pill">Mathematics</span></td>
+                      <td><span class="subject-pill">Physics</span></td>
+                      <td><span class="subject-pill">English</span></td>
+                      <td><span class="subject-pill">Chemistry</span></td>
+                      <td><span class="subject-pill">Mathematics</span></td>
+                    </tr>
+                    <tr>
+                      <td class="period-cell">8:30 – 9:30</td>
+                      <td><span class="subject-pill">Physics</span></td>
+                      <td><span class="subject-pill">Chemistry</span></td>
+                      <td><span class="subject-pill">Biology</span></td>
+                      <td><span class="subject-pill">ICT</span></td>
+                      <td><span class="subject-pill">Physics</span></td>
+                    </tr>
+                    <tr>
+                      <td class="period-cell">9:30 – 9:45</td>
+                      <td colspan="5" style="text-align:center; font-size:12px; color:var(--text-light); font-style:italic;">— Break —</td>
+                    </tr>
+                    <tr>
+                      <td class="period-cell">9:45 – 10:45</td>
+                      <td><span class="subject-pill">English</span></td>
+                      <td><span class="subject-pill">Biology</span></td>
+                      <td><span class="subject-pill">Mathematics</span></td>
+                      <td><span class="subject-pill">Physics</span></td>
+                      <td><span class="subject-pill">Chemistry</span></td>
+                    </tr>
+                    <tr>
+                      <td class="period-cell">10:45 – 11:45</td>
+                      <td><span class="subject-pill">Biology</span></td>
+                      <td><span class="subject-pill">Mathematics</span></td>
+                      <td><span class="subject-pill">Chemistry</span></td>
+                      <td><span class="subject-pill">English</span></td>
+                      <td><span class="subject-pill">Biology</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Results -->
+            <div class="dash-card">
+              <h3>Term 2 Results</h3>
+              <div style="overflow-x:auto;">
+                <table class="timetable" aria-label="Student results">
+                  <thead>
+                    <tr><th>Subject</th><th>Score</th><th>Grade</th><th>Remark</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Mathematics</td><td>82/100</td><td><span class="badge">A</span></td><td style="color:var(--green-muted); font-size:13px;">Excellent</td></tr>
+                    <tr><td>Physics</td><td>76/100</td><td><span class="badge badge-green">B+</span></td><td style="color:var(--green-muted); font-size:13px;">Very Good</td></tr>
+                    <tr><td>Chemistry</td><td>71/100</td><td><span class="badge badge-green">B</span></td><td style="color:var(--text-muted); font-size:13px;">Good</td></tr>
+                    <tr><td>Biology</td><td>85/100</td><td><span class="badge">A</span></td><td style="color:var(--green-muted); font-size:13px;">Excellent</td></tr>
+                    <tr><td>English Language</td><td>68/100</td><td><span class="badge badge-green">B-</span></td><td style="color:var(--text-muted); font-size:13px;">Good</td></tr>
+                    <tr><td>ICT</td><td>90/100</td><td><span class="badge">A+</span></td><td style="color:var(--green-muted); font-size:13px;">Outstanding</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Attendance -->
+            <div class="dash-card">
+              <h3>Attendance — Term 2</h3>
+              <div style="display:flex; flex-direction:column; gap:16px;">
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-size:14px; margin-bottom:8px;">
+                    <span style="color:var(--text-muted);">Overall Attendance</span>
+                    <strong>92%</strong>
+                  </div>
+                  <div class="attendance-bar"><div class="attendance-fill" style="width:92%"></div></div>
+                </div>
+                <div style="display:flex; gap:24px; font-size:14px; flex-wrap:wrap;">
+                  <div><span style="color:var(--text-muted);">Days Present:</span> <strong>46</strong></div>
+                  <div><span style="color:var(--text-muted);">Days Absent:</span> <strong>4</strong></div>
+                  <div><span style="color:var(--text-muted);">Days Late:</span> <strong>2</strong></div>
+                  <div><span style="color:var(--text-muted);">Total School Days:</span> <strong>50</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Assignments -->
+            <div class="dash-card">
+              <h3>Pending Assignments</h3>
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:14px; background:var(--ivory); border-radius:var(--radius-sm);">
+                  <div>
+                    <div style="font-family:var(--font-label); font-size:14px; font-weight:600; color:var(--text-main);">Physics: Wave Mechanics Essay</div>
+                    <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">Due: Friday, 28 Jun 2026</div>
+                  </div>
+                  <span class="badge" style="background:rgba(192,57,43,.15); color:#922B21;">Due Soon</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:14px; background:var(--ivory); border-radius:var(--radius-sm);">
+                  <div>
+                    <div style="font-family:var(--font-label); font-size:14px; font-weight:600; color:var(--text-main);">Chemistry: Lab Report — Titration</div>
+                    <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">Due: Monday, 30 Jun 2026</div>
+                  </div>
+                  <span class="badge badge-green">Pending</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; padding:14px; background:var(--green-light); border-radius:var(--radius-sm);">
+                  <div>
+                    <div style="font-family:var(--font-label); font-size:14px; font-weight:600; color:var(--green-dark);">Mathematics: Integration Exercise 5</div>
+                    <div style="font-size:12px; color:var(--green-muted); margin-top:4px;">Submitted 20 Jun 2026</div>
+                  </div>
+                  <span class="badge" style="background:var(--green-muted); color:var(--white);">Submitted ✓</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #student-logged-in:checked ~ section #student-login-view { display: none; }
+    #student-logged-in:checked ~ section #student-dashboard-view { display: block; }
+  </style>
+</div><!-- /page-student -->
+
+
+<!-- ================================================
+     PAGE: TEACHER PORTAL
+     ================================================ -->
+<div id="page-teacher" class="page">
+  <section style="padding-top:60px; padding-bottom:60px;" aria-labelledby="teacher-portal-heading">
+    <div class="container">
+      <h2 class="sr-only" id="teacher-portal-heading">Teacher Portal</h2>
+      <input type="checkbox" id="teacher-logged-in" style="display:none;" aria-hidden="true">
+
+      <div id="teacher-login-view">
+        <div class="portal-wrap">
+          <div class="portal-card">
+            <div class="portal-header">
+              <div class="portal-icon" aria-hidden="true" style="background:var(--gold); color:var(--green-dark);">🏫</div>
+              <h2>Teacher Portal</h2>
+              <p>Access your classroom management tools, attendance records, and grade uploads.</p>
+            </div>
+            <form method="POST" action="#" aria-label="Teacher login form">
+              <div class="form-group" style="margin-bottom:16px;">
+                <label for="t-id">Staff ID</label>
+                <input type="text" id="t-id" name="staff_id" required placeholder="e.g. TCH-0018" autocomplete="username">
+              </div>
+              <div class="form-group" style="margin-bottom:24px;">
+                <label for="t-pass">Password</label>
+                <input type="password" id="t-pass" name="password" required placeholder="••••••••" autocomplete="current-password">
+              </div>
+              <label for="teacher-logged-in" class="btn-primary" style="display:flex; justify-content:center; cursor:pointer; width:100%;">
+                Access Teacher Dashboard &#8594;
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="teacher-dashboard-view" style="display:none;">
+        <div class="dashboard-layout">
+          <aside class="sidebar" aria-label="Teacher navigation">
+            <div class="sidebar-profile">
+              <div class="sidebar-avatar" style="background:var(--gold); color:var(--green-dark);" aria-hidden="true">KO</div>
+              <div class="sidebar-name">Mr. Kwame Osei</div>
+              <div class="sidebar-role">Science Dept. | SHS 2A, 2B</div>
+            </div>
+            <nav class="sidebar-nav" aria-label="Teacher dashboard sections">
+              <a href="#" class="active"><span class="nav-dot"></span> Dashboard</a>
+              <a href="#">📋 Attendance</a>
+              <a href="#">📊 Upload Results</a>
+              <a href="#">📚 Assignments</a>
+              <a href="#">👥 My Classes</a>
+              <a href="#">📅 Timetable</a>
+              <a href="#" style="margin-top:20px; color:rgba(255,100,100,.7);">🚪 Sign Out</a>
+            </nav>
+          </aside>
+
+          <div class="dashboard-content">
+            <div class="dash-card">
+              <h3>Today's Overview</h3>
+              <div class="metrics">
+                <div class="metric"><strong>68</strong><span>Students Today</span></div>
+                <div class="metric"><strong>4</strong><span>Classes Today</span></div>
+                <div class="metric"><strong>12</strong><span>Assignments Pending</span></div>
+                <div class="metric"><strong>94%</strong><span>Class Avg Score</span></div>
+              </div>
+            </div>
+
+            <!-- Attendance manager -->
+            <div class="dash-card">
+              <h3>Mark Attendance — SHS 2A Physics <span class="badge badge-green">Monday 30 Jun</span></h3>
+              <div style="overflow-x:auto;">
+                <table class="timetable" aria-label="Attendance management">
+                  <thead>
+                    <tr><th>#</th><th>Student Name</th><th>ID</th><th>Status</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td><td>Abena Sarpong</td><td>SN2025-0021</td>
+                      <td>
+                        <label style="display:flex; align-items:center; gap:6px; font-size:13px; cursor:pointer;">
+                          <input type="radio" name="att1" value="present" checked> Present
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td><td>Kofi Mensah</td><td>SN2025-0042</td>
+                      <td>
+                        <label style="display:flex; align-items:center; gap:6px; font-size:13px; cursor:pointer;">
+                          <input type="radio" name="att2" value="present" checked> Present
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td><td>Akosua Boateng</td><td>SN2025-0063</td>
+                      <td>
+                        <label style="display:flex; align-items:center; gap:6px; font-size:13px; cursor:pointer;">
+                          <input type="radio" name="att3" value="absent"> Absent
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td><td>Yaw Darko</td><td>SN2025-0081</td>
+                      <td>
+                        <label style="display:flex; align-items:center; gap:6px; font-size:13px; cursor:pointer;">
+                          <input type="radio" name="att4" value="present" checked> Present
+                        </label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <button type="button" class="btn-green" style="margin-top:20px;">Save Attendance Record</button>
+            </div>
+
+            <!-- Upload results -->
+            <div class="dash-card">
+              <h3>Upload Results</h3>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="res-class">Class</label>
+                  <select id="res-class">
+                    <option>SHS 2A — Physics</option>
+                    <option>SHS 2B — Physics</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="res-term">Term / Assessment</label>
+                  <select id="res-term">
+                    <option>Term 2 Mid-Term</option>
+                    <option>Term 2 End of Term</option>
+                  </select>
+                </div>
+                <div class="form-group full">
+                  <label for="res-file">Upload Score Sheet (.xlsx or .csv)</label>
+                  <input type="file" id="res-file" name="results_file" accept=".xlsx,.csv,.pdf">
+                </div>
+              </div>
+              <button type="button" class="btn-primary" style="margin-top:20px;">Upload Results &#8594;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #teacher-logged-in:checked ~ section #teacher-login-view { display: none; }
+    #teacher-logged-in:checked ~ section #teacher-dashboard-view { display: block; }
+  </style>
+</div><!-- /page-teacher -->
+
+
+<!-- ================================================
+     PAGE: GALLERY
+     ================================================ -->
+<div id="page-gallery" class="page">
+  <header class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Gallery</p>
+      <h1>Life at <em>[School Name]</em></h1>
+      <p class="hero-lead">Moments of learning, laughter, achievement, and community — captured from across our campus.</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="gallery-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Photos</p>
+        <h2 class="section-heading" id="gallery-heading">School Events &amp; Campus Life</h2>
+      </div>
+      <div class="gallery-grid" role="list" aria-label="Photo gallery">
+        <div class="gallery-item tall" role="listitem">
+          <div class="gallery-placeholder">
+            <div class="icon" aria-hidden="true">🏫</div>
+            <span>School Building</span>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-placeholder">
+            <div class="icon" aria-hidden="true">🎓</div>
+            <span>Graduation 2024</span>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-placeholder">
+            <div class="icon" aria-hidden="true">🔬</div>
+            <span>Science Lab</span>
+          </div>
+        </div>
+        <div class="gallery-item wide" role="listitem" style="background:var(--ivory-dark);">
+          <div class="gallery-placeholder">
+            <div class="icon" aria-hidden="true">⚽</div>
+            <span>Sports Day 2024</span>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem" style="background:rgba(200,155,42,.12);">
+          <div class="gallery-placeholder">
+            <div class="icon" aria-hidden="true">🎨</div>
+            <span>Art Exhibition</span>
+          </div>
+        </div>
+        <div class="gallery-item tall" role="listitem" style="background:rgba(200,155,42,.12);">
+          <div class="gallery-placeholder">
+            <div class="icon" aria-hidden="true">📚</div>
+            <span>New Library Wing</span>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem">
+          <div class="gallery-placeholder">
+            <div class="icon" aria-hidden="true">🏆</div>
+            <span>Awards Ceremony</span>
+          </div>
+        </div>
+        <div class="gallery-item" role="listitem" style="background:var(--ivory-dark);">
+          <div class="gallery-placeholder">
+            <div class="icon" aria-hidden="true">🎵</div>
+            <span>Cultural Night</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header" style="margin-top:64px; margin-bottom:32px;">
+        <p class="section-label">Videos</p>
+        <h2 class="section-heading">School Videos</h2>
+      </div>
+      <div class="card-grid">
+        <div style="background:var(--green-dark); border-radius:var(--radius-md); aspect-ratio:16/9; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;">
+          <div style="width:56px; height:56px; border-radius:50%; background:rgba(200,155,42,.3); display:flex; align-items:center; justify-content:center; font-size:24px;">▶</div>
+          <span style="font-family:var(--font-label); font-size:13px; color:rgba(255,255,255,.7);">School Tour 2024</span>
+        </div>
+        <div style="background:var(--green-mid); border-radius:var(--radius-md); aspect-ratio:16/9; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;">
+          <div style="width:56px; height:56px; border-radius:50%; background:rgba(200,155,42,.3); display:flex; align-items:center; justify-content:center; font-size:24px;">▶</div>
+          <span style="font-family:var(--font-label); font-size:13px; color:rgba(255,255,255,.7);">Graduation Ceremony 2024</span>
+        </div>
+        <div style="background:var(--green-muted); border-radius:var(--radius-md); aspect-ratio:16/9; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;">
+          <div style="width:56px; height:56px; border-radius:50%; background:rgba(200,155,42,.3); display:flex; align-items:center; justify-content:center; font-size:24px;">▶</div>
+          <span style="font-family:var(--font-label); font-size:13px; color:rgba(255,255,255,.7);">National Science Fair Win</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-gallery -->
+
+
+<!-- ================================================
+     PAGE: NEWS & EVENTS
+     ================================================ -->
+<div id="page-news" class="page">
+  <header class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">News &amp; Events</p>
+      <h1>Stay <em>Connected</em></h1>
+      <p class="hero-lead">The latest announcements, achievements, and upcoming events from our school community.</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="all-news-heading">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <p class="section-label">Announcements</p>
+          <h2 class="section-heading" id="all-news-heading">Latest News</h2>
+          <ul class="news-list" aria-label="School news list" style="margin-top:24px;">
+            <li class="news-item">
+              <div class="news-date"><span class="day">14</span><span class="mon">Jun</span></div>
+              <div class="news-body">
+                <h4>2025 WAEC Results — 97% Distinction Rate</h4>
+                <p>Outstanding performance across all six programmes. Physics and Mathematics led with 99% pass rates.</p>
+              </div>
+            </li>
+            <li class="news-item">
+              <div class="news-date"><span class="day">08</span><span class="mon">Jun</span></div>
+              <div class="news-body">
+                <h4>Term 3 Admissions Open for 2025/26</h4>
+                <p>Applications are now open. Deadline for early applications is 31 July 2025.</p>
+              </div>
+            </li>
+            <li class="news-item">
+              <div class="news-date"><span class="day">01</span><span class="mon">Jun</span></div>
+              <div class="news-body">
+                <h4>Inter-School Science Fair — 1st Place</h4>
+                <p>Our students swept the competition — gold in Biology, Physics, and Computing categories.</p>
+              </div>
+            </li>
+            <li class="news-item">
+              <div class="news-date"><span class="day">20</span><span class="mon">May</span></div>
+              <div class="news-body">
+                <h4>New Computer Lab Officially Opened</h4>
+                <p>The new 60-seat ICT lab, equipped with latest hardware and high-speed internet, was inaugurated.</p>
+              </div>
+            </li>
+            <li class="news-item">
+              <div class="news-date"><span class="day">12</span><span class="mon">May</span></div>
+              <div class="news-body">
+                <h4>School Football Team Wins Regional Cup</h4>
+                <p>The "Green Eagles" claimed the Regional Schools Football Cup after a thrilling 3-1 final victory.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Upcoming Events -->
+        <div>
+          <p class="section-label">Upcoming</p>
+          <h2 class="section-heading">Events Calendar</h2>
+          <div style="display:flex; flex-direction:column; gap:16px; margin-top:24px;">
+            <div class="card" style="display:flex; gap:20px; align-items:flex-start;">
+              <div style="min-width:52px; text-align:center; padding:8px; background:var(--green-dark); border-radius:var(--radius-sm);">
+                <div style="font-family:var(--font-display); font-size:22px; font-weight:700; color:var(--gold-light);">05</div>
+                <div style="font-family:var(--font-label); font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:rgba(255,255,255,.6); margin-top:2px;">Jul</div>
+              </div>
+              <div>
+                <h4 style="margin-bottom:4px;">Parents Open Day</h4>
+                <p style="margin-bottom:8px;">Meet teachers and review your child's progress. 9am – 2pm, Main Hall.</p>
+                <span class="badge badge-green">All Welcome</span>
+              </div>
+            </div>
+            <div class="card" style="display:flex; gap:20px; align-items:flex-start;">
+              <div style="min-width:52px; text-align:center; padding:8px; background:var(--gold); border-radius:var(--radius-sm);">
+                <div style="font-family:var(--font-display); font-size:22px; font-weight:700; color:var(--green-dark);">18</div>
+                <div style="font-family:var(--font-label); font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:var(--green-dark); margin-top:2px;">Jul</div>
+              </div>
+              <div>
+                <h4 style="margin-bottom:4px;">Prize-Giving Ceremony</h4>
+                <p style="margin-bottom:8px;">Annual academic and co-curricular awards. 10am, School Auditorium.</p>
+                <span class="badge">Formal Dress</span>
+              </div>
+            </div>
+            <div class="card" style="display:flex; gap:20px; align-items:flex-start;">
+              <div style="min-width:52px; text-align:center; padding:8px; background:var(--green-dark); border-radius:var(--radius-sm);">
+                <div style="font-family:var(--font-display); font-size:22px; font-weight:700; color:var(--gold-light);">08</div>
+                <div style="font-family:var(--font-label); font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:rgba(255,255,255,.6); margin-top:2px;">Sep</div>
+              </div>
+              <div>
+                <h4 style="margin-bottom:4px;">New Term Begins — 2025/26</h4>
+                <p style="margin-bottom:8px;">First day of the new academic year. All students report by 7:00am.</p>
+                <span class="badge badge-green">2025/26 Term 1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-news -->
+
+
+<!-- ================================================
+     PAGE: CONTACT US
+     ================================================ -->
+<div id="page-contact" class="page">
+  <header class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Get in Touch</p>
+      <h1>We'd Love to <em>Hear From You</em></h1>
+      <p class="hero-lead">Whether you have questions about admissions, programmes, or just want to visit — our doors are always open.</p>
+    </div>
+  </header>
+
+  <section aria-labelledby="contact-heading">
+    <div class="container">
+      <h2 class="sr-only" id="contact-heading">Contact information and form</h2>
+      <div class="two-col">
+        <!-- Contact info -->
+        <div>
+          <p class="section-label">Contact Details</p>
+          <h3 class="section-heading" style="font-size:32px; margin-bottom:32px;">Reach Out Anytime</h3>
+          <ul class="contact-info-list" aria-label="Contact information">
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">📍</div>
+              <div class="contact-info-text">
+                <strong>Address</strong>
+                <span>12 Academy Road, Education Hill<br>Kumasi, Ashanti Region, Ghana</span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">📞</div>
+              <div class="contact-info-text">
+                <strong>Phone</strong>
+                <span>+233 (0) 32 200 1234<br>+233 (0) 24 500 5678 (WhatsApp)</span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">✉️</div>
+              <div class="contact-info-text">
+                <strong>Email</strong>
+                <span>info@schoolname.edu.gh<br>admissions@schoolname.edu.gh</span>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">🕐</div>
+              <div class="contact-info-text">
+                <strong>Office Hours</strong>
+                <span>Mon – Fri: 7:00am – 4:30pm<br>Sat: 8:00am – 12:00noon</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="map-placeholder" role="img" aria-label="Map placeholder — school location on Academy Road, Kumasi">
+            <div class="map-pin" aria-hidden="true">📍</div>
+            <p>12 Academy Road, Kumasi</p>
+            <p style="font-size:12px; color:var(--green-muted);">Replace with Google Maps embed</p>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div>
+          <p class="section-label">Send a Message</p>
+          <h3 class="section-heading" style="font-size:32px; margin-bottom:32px;">Contact Form</h3>
+          <form method="POST" action="#" aria-label="Contact form" style="background:var(--white); border:1px solid var(--ivory-dark); border-radius:var(--radius-lg); padding:36px;">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="c-name">Full Name *</label>
+                <input type="text" id="c-name" name="name" required placeholder="Your full name" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="c-phone">Phone Number</label>
+                <input type="tel" id="c-phone" name="phone" placeholder="+233 ..." autocomplete="tel">
+              </div>
+              <div class="form-group full">
+                <label for="c-email">Email Address *</label>
+                <input type="email" id="c-email" name="email" required placeholder="you@email.com" autocomplete="email">
+              </div>
+              <div class="form-group full">
+                <label for="c-subject">Subject *</label>
+                <select id="c-subject" name="subject" required>
+                  <option value="" disabled selected>What is this about?</option>
+                  <option value="admissions">Admissions Enquiry</option>
+                  <option value="fees">Fee &amp; Payment</option>
+                  <option value="academics">Academic Programme</option>
+                  <option value="portal">Portal Support</option>
+                  <option value="general">General Enquiry</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="c-message">Message *</label>
+                <textarea id="c-message" name="message" required placeholder="Tell us how we can help you..." style="min-height:150px;"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%; margin-top:8px; justify-content:center;">
+              Send Message &#8594;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-contact -->
+
+
+<!-- ================================================
+     PAGE: ADMIN DASHBOARD
+     ================================================ -->
+<div id="page-admin" class="page">
+  <section style="padding-top:60px; padding-bottom:60px;" aria-labelledby="admin-heading">
+    <div class="container">
+      <h2 class="sr-only" id="admin-heading">Admin Dashboard</h2>
+      <input type="checkbox" id="admin-logged-in" style="display:none;" aria-hidden="true">
+
+      <div id="admin-login-view">
+        <div class="portal-wrap">
+          <div class="portal-card">
+            <div class="portal-header">
+              <div class="portal-icon" style="background:#1A1A18; color:var(--gold-light);" aria-hidden="true">⚙️</div>
+              <h2>Admin Dashboard</h2>
+              <p>Restricted access. Authorised personnel only.</p>
+            </div>
+            <form method="POST" action="#" aria-label="Admin login form">
+              <div class="form-group" style="margin-bottom:16px;">
+                <label for="a-user">Admin Username</label>
+                <input type="text" id="a-user" name="username" required placeholder="admin username" autocomplete="username">
+              </div>
+              <div class="form-group" style="margin-bottom:8px;">
+                <label for="a-pass">Password</label>
+                <input type="password" id="a-pass" name="password" required placeholder="••••••••" autocomplete="current-password">
+              </div>
+              <div class="form-group" style="margin-bottom:24px;">
+                <label for="a-2fa">Two-Factor Code</label>
+                <input type="text" id="a-2fa" name="twofa" placeholder="6-digit code" maxlength="6" inputmode="numeric">
+              </div>
+              <label for="admin-logged-in" class="btn-primary" style="display:flex; justify-content:center; cursor:pointer; width:100%; background:var(--text-main); border-color:var(--text-main);">
+                Enter Admin Panel &#8594;
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="admin-dashboard-view" style="display:none;">
+        <div class="dashboard-layout">
+          <aside class="sidebar" style="background:#1A1A18;" aria-label="Admin navigation">
+            <div class="sidebar-profile">
+              <div class="sidebar-avatar" style="background:#C89B2A; color:#0D2B1A;" aria-hidden="true">AD</div>
+              <div class="sidebar-name">Administrator</div>
+              <div class="sidebar-role">System Admin — Full Access</div>
+            </div>
+            <nav class="sidebar-nav" aria-label="Admin dashboard sections">
+              <a href="#" class="active"><span class="nav-dot"></span> Dashboard</a>
+              <a href="#">👥 Manage Students</a>
+              <a href="#">🏫 Manage Teachers</a>
+              <a href="#">📋 Admissions</a>
+              <a href="#">📰 News &amp; Events</a>
+              <a href="#">🖼️ Manage Gallery</a>
+              <a href="#">📊 Reports</a>
+              <a href="#">⚙️ Settings</a>
+              <a href="#" style="margin-top:20px; color:rgba(255,100,100,.7);">🚪 Sign Out</a>
+            </nav>
+          </aside>
+
+          <div class="dashboard-content">
+            <div class="dash-card">
+              <h3>School Overview</h3>
+              <div class="metrics">
+                <div class="metric"><strong>2,412</strong><span>Total Students</span></div>
+                <div class="metric"><strong>124</strong><span>Teaching Staff</span></div>
+                <div class="metric"><strong>47</strong><span>Pending Admissions</span></div>
+                <div class="metric"><strong>98%</strong><span>System Uptime</span></div>
+              </div>
+            </div>
+
+            <!-- Students table -->
+            <div class="dash-card">
+              <h3>Recent Student Registrations
+                <button type="button" class="btn-green" style="padding:8px 16px; font-size:13px;">+ Add Student</button>
+              </h3>
+              <div style="overflow-x:auto;">
+                <table class="timetable" aria-label="Student registrations">
+                  <thead>
+                    <tr><th>ID</th><th>Name</th><th>Level</th><th>Programme</th><th>Status</th><th>Action</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="font-family:monospace; font-size:12px;">SN2025-0421</td>
+                      <td>Ama Boateng</td><td>SHS 1</td><td>Science</td>
+                      <td><span class="badge badge-green" style="font-size:11px;">Active</span></td>
+                      <td><a href="#" style="color:var(--green-muted); font-size:13px; font-weight:500;">Edit</a></td>
+                    </tr>
+                    <tr>
+                      <td style="font-family:monospace; font-size:12px;">SN2025-0422</td>
+                      <td>Kojo Asante</td><td>JHS 1</td><td>—</td>
+                      <td><span class="badge badge-green" style="font-size:11px;">Active</span></td>
+                      <td><a href="#" style="color:var(--green-muted); font-size:13px; font-weight:500;">Edit</a></td>
+                    </tr>
+                    <tr>
+                      <td style="font-family:monospace; font-size:12px;">SN2025-0423</td>
+                      <td>Efua Darko</td><td>SHS 2</td><td>Arts</td>
+                      <td><span class="badge" style="font-size:11px; background:rgba(192,57,43,.15); color:#922B21;">Suspended</span></td>
+                      <td><a href="#" style="color:var(--green-muted); font-size:13px; font-weight:500;">Edit</a></td>
+                    </tr>
+                    <tr>
+                      <td style="font-family:monospace; font-size:12px;">SN2025-0424</td>
+                      <td>Yaw Tetteh</td><td>SHS 1</td><td>Business</td>
+                      <td><span class="badge badge-green" style="font-size:11px;">Active</span></td>
+                      <td><a href="#" style="color:var(--green-muted); font-size:13px; font-weight:500;">Edit</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Pending admissions -->
+            <div class="dash-card">
+              <h3>Pending Admissions <span class="badge" style="font-size:12px;">47 awaiting review</span></h3>
+              <div style="overflow-x:auto;">
+                <table class="timetable" aria-label="Pending admissions">
+                  <thead>
+                    <tr><th>Applicant</th><th>Applied For</th><th>Date</th><th>Action</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Adwoa Sarpong</td><td>SHS 1 — Science</td><td style="font-size:13px; color:var(--text-muted);">22 Jun 2026</td>
+                      <td style="display:flex; gap:8px; padding:10px 14px;">
+                        <a href="#" style="color:var(--green-muted); font-size:13px; font-weight:600;">Approve</a>
+                        <a href="#" style="color:#922B21; font-size:13px; font-weight:600;">Decline</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Kwesi Antwi</td><td>JHS 1</td><td style="font-size:13px; color:var(--text-muted);">20 Jun 2026</td>
+                      <td style="display:flex; gap:8px; padding:10px 14px;">
+                        <a href="#" style="color:var(--green-muted); font-size:13px; font-weight:600;">Approve</a>
+                        <a href="#" style="color:#922B21; font-size:13px; font-weight:600;">Decline</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Nana Ama Owusu</td><td>SHS 1 — Arts</td><td style="font-size:13px; color:var(--text-muted);">18 Jun 2026</td>
+                      <td style="display:flex; gap:8px; padding:10px 14px;">
+                        <a href="#" style="color:var(--green-muted); font-size:13px; font-weight:600;">Approve</a>
+                        <a href="#" style="color:#922B21; font-size:13px; font-weight:600;">Decline</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #admin-logged-in:checked ~ section #admin-login-view { display: none; }
+    #admin-logged-in:checked ~ section #admin-dashboard-view { display: block; }
+  </style>
+</div><!-- /page-admin -->
+
+
+<!-- ================================================
+     FOOTER (shared across all pages)
+     ================================================ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>[School Name]</h3>
+        <p>Shaping minds and building futures since 1985. A community of learners, leaders, and change-makers united by a shared commitment to excellence.</p>
+        <p style="margin-top:16px; font-size:13px;">12 Academy Road, Kumasi, Ghana</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#page-home">Home</a></li>
+          <li><a href="#page-about">About Us</a></li>
+          <li><a href="#page-admissions">Admissions</a></li>
+          <li><a href="#page-academics">Academics</a></li>
+          <li><a href="#page-gallery">Gallery</a></li>
+          <li><a href="#page-news">News &amp; Events</a></li>
+          <li><a href="#page-contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="#page-student">Student Portal</a></li>
+          <li><a href="#page-teacher">Teacher Portal</a></li>
+          <li><a href="#page-admin">Admin Dashboard</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+233322001234">+233 32 200 1234</a></li>
+          <li><a href="mailto:info@schoolname.edu.gh">info@schoolname.edu.gh</a></li>
+          <li><a href="mailto:admissions@schoolname.edu.gh">admissions@schoolname.edu.gh</a></li>
+        </ul>
+        <div style="margin-top:20px; display:flex; gap:12px;">
+          <a href="#" style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.1); display:flex; align-items:center; justify-content:center; font-size:16px;" aria-label="Facebook">f</a>
+          <a href="#" style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.1); display:flex; align-items:center; justify-content:center; font-size:16px;" aria-label="Twitter">𝕏</a>
+          <a href="#" style="width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,.1); display:flex; align-items:center; justify-content:center; font-size:16px;" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 <span class="gold">[School Name]</span>. All rights reserved.</span>
+      <span>Designed with ♥ for educational excellence</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Dark mode: purely CSS using checkbox in a hidden way -->
+<!-- Note: True dark-mode toggle without JS requires a workaround; 
+     this site is fully functional in light mode. 
+     To activate dark mode system-wide, add data-theme="dark" to <html>. -->
+
+</body>
+</html>
